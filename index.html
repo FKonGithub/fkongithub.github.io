@@ -408,14 +408,14 @@
 
 
     function check(e) {
-      if( e.path[0].className.includes("check") ){
-        if (e.path[0].textContent === "") {
-          e.path[0].textContent = mark.value
+      if( e.target.className.includes("check") ){
+        if (e.target.textContent === "") {
+          e.target.textContent = mark.value
         }
         else{
-          e.path[0].textContent = ""
+          e.target.textContent = ""
         }
-        console.log(e.path[0].parentNode.firstElementChild.textContent);
+        // console.log(e.target.parentNode.firstElementChild.textContent);
       }
     }
 
